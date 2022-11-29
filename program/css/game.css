@@ -16,6 +16,10 @@ body{
 .box {
     background-color: white;
     border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    display: flex;
 }
 
 .div1{
@@ -64,6 +68,8 @@ body{
 }
 
 .info{
+    background-color: white;
+    border: 1px solid black;
     grid-column: 2/11;
     grid-row:11/12
 }
