@@ -21,6 +21,7 @@ const winningcombination = [[0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6], [1, 4, 7]
 
 
 const boxes = document.querySelectorAll('.box');
+const info = document.querySelector('.info');
 
 let stopping = false;
 let toggle = false;
@@ -33,14 +34,18 @@ boxes.forEach(box => {
 
         if (box.textContent != "") {
             console.log("box.tile reageerd niet");
+    
             return
         }
         console.log('box.tile reageerd: ', e.target);
         if (toggle) {
             e.target.textContent = "O";
+            info.innerHTML=('beurt: speler 1')
+
         } else {
-            e.target.textContent = "X"
-        }
+            e.target.textContent = "X";
+            info.innerHTML=('beurt: speler 2')
+;        }
 
         toggle = !toggle;
 
