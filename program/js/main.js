@@ -6,5 +6,5 @@ start.addEventListener('click', moveToGame);
 
 //ensures the enitre div is clickable like a ahref
 function moveToGame(){
-window.location.href = ('/game.html');
+window.location.href = ('game.html');
 }
