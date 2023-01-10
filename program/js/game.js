@@ -12,11 +12,11 @@ alert('Speler 1 gebruikt  kruisjes');
 
 alert('speler 2 gebruikt cirkels');
 
-const player1name = prompt('Wat is de naam van speler 1?');
+const player1Name = prompt('Wat is de naam van speler 1?');
 
-const player2name = prompt('wat is de naam van speler 2?');
+const player2Name = prompt('wat is de naam van speler 2?');
 
-const winningcombination = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+const winningCombination = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
 
 
 
@@ -26,7 +26,7 @@ const info = document.querySelector('.info');
 let stopping = false;
 let toggle = false;
 
-info.innerHTML = `beurt: ${player1name}`
+info.innerHTML = `beurt: ${player1Name}`
 
 
 boxes.forEach(box => {
@@ -45,11 +45,11 @@ boxes.forEach(box => {
         //responsible for switching between player 1 and player 2
         if (toggle) {
             e.target.textContent = "O";
-            info.innerHTML = (`beurt: ${player1name}`)
+            info.innerHTML = (`beurt: ${player1Name}`)
             
         } else {
             e.target.textContent = "X";
-            info.innerHTML = (`beurt: ${player2name}`)
+            info.innerHTML = (`beurt: ${player2Name}`)
                 ;
         }
 
@@ -61,8 +61,8 @@ boxes.forEach(box => {
 
 
 function checkForWin() {
-    for (let i = 0; i < winningcombination.length; i++) {
-        const row = winningcombination[i];
+    for (let i = 0; i < winningCombination.length; i++) {
+        const row = winningCombination[i];
         //here are the combinations enter
         const position_a = row[0];
         const position_b = row[1];
