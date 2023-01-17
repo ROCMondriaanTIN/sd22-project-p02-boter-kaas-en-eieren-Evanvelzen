@@ -16,7 +16,15 @@ const player1Name = prompt('Wat is de naam van speler 1?');
 
 const player2Name = prompt('wat is de naam van speler 2?');
 
-const winningCombination = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+const winningCombination = [
+    [0, 1, 2],
+    [3, 4, 5], 
+    [6, 7, 8], 
+    [0, 3, 6], 
+    [1, 4, 7], 
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]];
 
 
 
@@ -79,14 +87,14 @@ function checkForWin() {
 
         else if (box_a.textContent == box_b.textContent && box_b.textContent == box_c.textContent && box_c.textContent == "X") {
             console.log(`Winnende Situatie`);
-            alert(`Spel gewonnen door ${player1name}`);
+            alert(`Spel gewonnen door ${player1Name}`);
             window.location.href = "index.html"
             stopping = true;
         } 
         
         else if(box_a.textContent == box_b.textContent && box_b.textContent == box_c.textContent && box_c.textContent == "O") {
             console.log(`Winnende Situatie`);
-            alert(`Spel gewonnen door ${player2name}`);
+            alert(`Spel gewonnen door ${player2Name}`);
             window.location.href = "index.html"
             stopping = true;
         }
