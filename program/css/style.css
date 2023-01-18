@@ -9,9 +9,6 @@ body{
     grid-template-rows: repeat(12, 40px);
     height: 600px;
     width: 500px;
-    display: grid;
-    grid-template-columns: repeat(12, 40px);
-    grid-template-rows: repeat(12, 40px);
     text-align: center;
 }
 
