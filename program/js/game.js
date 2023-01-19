@@ -1,5 +1,6 @@
 console.log('main.js loaded');
 
+//explain explanation of tules of the game 
 alert('welkom bij Boter, Kaas en Eieren');
 
 alert(`het doel is simpel.
@@ -12,6 +13,7 @@ alert('Speler 1 gebruikt  kruisjes');
 
 alert('speler 2 gebruikt cirkels');
 
+//players asked to fill in a name
 const player1Name = prompt('Wat is de naam van speler 1?');
 
 const player2Name = prompt('wat is de naam van speler 2?');
@@ -85,6 +87,7 @@ function checkForWin() {
             continue;
         }
 
+        //in case of winning combination it will choose the winning player with the else if statement
         else if (box_a.textContent == box_b.textContent && box_b.textContent == box_c.textContent && box_c.textContent == "X") {
             console.log(`Winnende Situatie`);
             alert(`Spel gewonnen door ${player1Name}`);
